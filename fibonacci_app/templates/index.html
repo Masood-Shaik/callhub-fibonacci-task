@@ -1,0 +1,26 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+      <section class="quick-jump__filter.form-control">
+          <div class="quick-jump__filter.form-control">
+              <form action="" method="GET">
+                  <input type="search" placeholder="Enter The Value" name="number">
+                  <button>Fetch</button>
+              </form>
+              <div>
+                  <p>Last number in Fibonacci sequence : {{result}}</p>
+                  <br/>
+                  <p>Time Taken : {{time_taken}} seconds</p>
+              </div>
+          </div>
+      </section>
+
+</body>
+</html>
